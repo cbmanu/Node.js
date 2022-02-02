@@ -4,7 +4,7 @@
   "description": "my first website website express",
   "main": "index.js",
   "scripts": {
-    "start": "node src",
+    "start": "node src/index.js",
     "dev":"nodemon src"
   },
   "author": "",
