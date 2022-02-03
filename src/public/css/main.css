@@ -3,8 +3,7 @@
 body{
     font-family: 'Supermercado One', cursive;
     background: linear-gradient( #0F2027,#203A43 );
-    font-weight: 600;
-	color: #7F8C8D;
+	color: var(--main-color);
 	position: relative;
 }
 :root{
@@ -17,10 +16,13 @@ body{
 .navbar{
     font-size: 18px;
 }
-.navbar-brand{
-    font-size: 26px;
+.navbar-brand h1{
+    font-size: 35px;
+	display: inline;
 }
-
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255,255,255);
+}
 /* main content */
 
 .main-content{
@@ -30,9 +32,10 @@ body{
 
 .main-title{
     font-family: 'Roboto Mono', monospace;
-    color:  #7F8C8D;
+    color:  var(--main-color);
     font-size: 4.5em;
     font-weight: 600;
+	text-align: center;
 }
 
 .main-title span{
@@ -41,7 +44,9 @@ body{
 }
 .main-title span.animation{
     opacity: 1;
-
+}
+.hero{
+	margin-top: 50px;
 }
 
 /* image */
@@ -52,8 +57,8 @@ body{
 }
 
 .mini-skull-logo{
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     margin-bottom: 10px;
     margin-right: 10px;
 }
@@ -86,13 +91,30 @@ body{
 	border-radius: 10%;
 	text-align: center;
 	margin: 30px;
+	width: 80%;
+	margin: auto;
 }
 .glass p {
 	text-align: justify;
+	width: 70%;
+	margin: auto;
+	color: #7F8C8D;
 }
 .glass .row{
 	width: 100%;
 }
+.me{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.me img{
+	border-radius: 100%;
+	object-fit: cover;
+	width: 235px;
+	height: 235px;
+}
+
 
 /* form */
 .form-group .btn{
@@ -104,10 +126,31 @@ body{
 .skills-title{
 	text-align: center;
 	font-size: 3em;
-	margin-top: 35px;
-	color: #fff;
+	margin-top: 80px;
+	margin-bottom: 80px;
 }
+.image-skills{
+	width: 200px;
+	height: 150px;
+	transition: all 0.7s ease ;
+	margin-top: 36px;
+}
+.image-skills div{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.image-skills div img{
+	width: 130px;
+    height: 130px;
+    object-fit: cover;
 
+
+}
+.image-skills:hover{
+	transform: scale(1.10); 
+}
 /* Projects Page */
 
 .project-title{
@@ -135,16 +178,25 @@ body{
 /* footer */
 
 footer{
-	background-color: #212529;
-	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 80px;
+	height: 100px;
+}
+footer p{
+	margin-bottom: 0;
 }
 
 /* responsive*/
 
 @media screen and (min-width: 1920px) {
+
+	/* main content */
+
     .hero{
         margin-top: 20vh;
-        margin-bottom:200px ;
+        margin-bottom:100px ;
     }
     .logo{
         font-size: 60px;
@@ -161,7 +213,76 @@ footer{
         padding: 14px;
         font-size: 26px;
     }
+
+	/* About */
+
+	#about-me{
+		height: 350px;
+	}
+	/* contact */
+	.card{
+		height: 600px;
+	}
+	.card textarea{
+		height: 400px;
+	}
+
+	/* Skills */
+
+	.modal-skills{
+		margin-bottom: 200px;
+	}
+
+	.skills-title{
+		font-size: 3.4em;
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+	.image-skills{
+		margin-top: 32px;
+	}
+
+	/* Project */
+
+	.project-title{
+		font-size: 3.4em;
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+	.img-projects{
+		width: 90%;
+	}
+	.img-projects img:hover{
+		transform: scale(1.05);
+	}
+
+	/* footer */
+
+footer{
+	margin-top: 100px;
 }
+}
+@media screen and (min-width:768px)and (max-width:1200px){
+
+	/* contact page */
+
+	.card{
+		width: 330px;
+	}
+}
+@media screen and (max-width:576px){
+	.main-title{
+		font-size: 2em;
+	}
+	.big-skull{
+		width: 300px;
+		height: 370px;
+	}
+	.mini-skull1, .mini-skull2,.mini-skull3,.mini-skull4{
+		display: none;
+	}
+}
+
 
 /* circles */
 

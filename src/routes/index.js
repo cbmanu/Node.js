@@ -2,16 +2,16 @@ const express = require("express");
 const router = express.Router();
 
 router.get('/', (req,res)=>{
-    res.render('index',{title: "website"})
+    res.render('index')
 })
 router.get('/skills', (req,res)=>{
-    res.render('skills',{title: "website"})
+    res.render('skills')
 })
 router.get('/projects', (req,res)=>{
-    res.render('projects',{title: "website"})
+    res.render('projects')
 })
 router.get('/contact', (req,res)=>{
-    res.render('contact',{title: "website"})
+    res.render('contact')
 })
 
 module.exports = router;
