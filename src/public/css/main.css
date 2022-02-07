@@ -175,6 +175,20 @@ body{
 	transform: scale(1.05);
 }
 
+/* contact */
+.col2{
+	text-align: end;
+}
+.link-contact{
+	list-style: none;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+.link-contact:hover{
+	color:rgba(255,255,255,.75)
+}
+
 /* footer */
 
 footer{
@@ -280,6 +294,13 @@ footer{
 	}
 	.mini-skull1, .mini-skull2,.mini-skull3,.mini-skull4{
 		display: none;
+	}
+	.links-contact div{
+		text-align: center;
+	}
+	#about-me{
+		background-color: transparent;
+		border: 0px;
 	}
 }
 
