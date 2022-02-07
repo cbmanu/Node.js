@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,47 @@
     <title>Portfolio</title>
     <%- include('partials/head.ejs') %>
 </head>
+
 <body>
     <!-- navbar -->
     <%- include('partials/navbar.ejs') %>
-    
-    <h2 class="text-center text-white project-title">Projects</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-md text-center">
-                <h3>Countdown</h3><p>To do Exercise!</p>
-                <div class="img-projects"><a href="https://cbmanu.github.io/countdown/" target="_blank"><img src="img/Screenshot_26.png" alt=""></a></div>
-                <button class="btn btn-primary m-4"><a href="https://github.com/cbmanu/countdown" target="_blank"><span class="text-white">Code in Github</span></a></button>
-             </div>
-             <div class="col-md text-center">
-                <h3>Restaurant</h3><p>The Best Food That You Are Going To Eat!</p>
-                <div class="img-projects"><a href="https://restaurant-expressjs.herokuapp.com/" target="_blank"><img src="img/Screenshot_29.png" alt=""></a></div>
-                <button class="btn btn-primary m-4"><a href="https://github.com/cbmanu/website" target="_blank"><span class="text-white">Code in Github</span></a></button>
-             </div>
-        </div>
-    </div>
 
-    <!-- footer -->
-    <%- include('partials/footer.ejs')%>
+        <h2 class="text-center text-white project-title">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md text-center">
+                    <h3>Countdown</h3>
+                    <p>To do Exercise!</p>
+                    <div class="img-projects">
+                        <a href="https://cbmanu.github.io/countdown/" target="_blank">
+                            <img src="img/Screenshot_26.png" alt="img first project countdown">
+                        </a>
+                    </div>
+                    <button class="btn btn-primary m-4">
+                        <a href="https://github.com/cbmanu/countdown" target="_blank">
+                            <span class="text-white">Code in Github</span>
+                        </a>
+                    </button>
+                </div>
+                <div class="col-md text-center">
+                    <h3>Restaurant</h3>
+                    <p>The Best Food That You Are Going To Eat!</p>
+                    <div class="img-projects">
+                        <a href="https://restaurant-expressjs.herokuapp.com/" target="_blank">
+                            <img src="img/Screenshot_29.png" alt="img second project restaurant">
+                        </a>
+                    </div>
+                    <button class="btn btn-primary m-4">
+                        <a href="https://github.com/cbmanu/website" target="_blank">
+                            <span class="text-white">Code in Github</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <%- include('partials/footer.ejs')%>
 </body>
+
 </html>
