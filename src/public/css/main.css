@@ -1,5 +1,8 @@
 /* settings */
-
+html,body{
+	max-width: 100%;
+	overflow-x: hidden;
+}
 body{
     font-family: 'Supermercado One', cursive;
     background: linear-gradient( #0F2027,#203A43 );
@@ -84,7 +87,9 @@ body{
 }
 
 /* about me */
-
+#about-me .row{
+	--bs-gutter-x: 0;
+}
 .glass{
 	background-color: rgba(255, 255, 255, 0.15);
 	border: 1px solid white;
@@ -99,9 +104,6 @@ body{
 	width: 70%;
 	margin: auto;
 	color: #7F8C8D;
-}
-.glass .row{
-	width: 100%;
 }
 .me{
 	display: flex;
@@ -279,7 +281,7 @@ footer{
 }
 }
 @media screen and (min-width:768px)and (max-width:1200px){
-
+	 
 	/* contact page */
 
 	.card{
@@ -287,6 +289,13 @@ footer{
 	}
 }
 @media screen and (max-width:576px){
+
+ 	/* about-me  */
+
+	 .me h3{
+		font-size: calc(1rem + .6vw)
+	 }
+
 	.main-title{
 		font-size: 2em;
 	}
@@ -310,6 +319,7 @@ footer{
 	.link-contact:hover{
 		font-size: 1.25em;
 	}
+	
 }
 
 
