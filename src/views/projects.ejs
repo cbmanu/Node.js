@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <%- include('partials/head.ejs') %>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- navbar -->
     <%- include('partials/navbar.ejs') %>
+    <div class="container mb-5" id="projects">
+      <h2 class="text-center text-white project-title">Projects</h2>
 
-        <h2 class="text-center text-white project-title">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md text-center">
-                    <h3>Task Manager</h3>
-                    <p>To Keep You Organized!</p>
-                    <div class="img-projects">
-                        <a href="https://task-manager-joqq.onrender.com/" target="_blank">
-                            <img src="img/taskManager.png" alt="img first project countdown">
-                        </a>
-                    </div>
-                    <button class="btn btn-primary m-4">
-                        <a href="https://github.com/cbmanu/task-manager" target="_blank">
-                            <span class="text-white">Code in Github</span>
-                        </a>
-                    </button>
-                </div>
-                <div class="col-md text-center">
-                    <h3>Chat online</h3>
-                    <p>Interact with any person in the world!</p>
-                    <div class="img-projects">
-                        <a href="https://chat-online-inhg.onrender.com/" target="_blank">
-                            <img src="img/chat.png" alt="img second project restaurant">
-                        </a>
-                    </div>
-                    <button class="btn btn-primary m-4">
-                        <a href="https://github.com/cbmanu/chat" target="_blank">
-                            <span class="text-white">Code in Github</span>
-                        </a>
-                    </button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <h3>Get the weather</h3>
-                    <p>Any city at any time!</p>
-                    <div class="img-projects">
-                        <a href="https://gettheweather.onrender.com/" target="_blank">
-                            <img src="img/weather.png" alt="img first project countdown">
-                        </a>
-                    </div>
-                    <button class="btn btn-primary m-4">
-                        <a href="https://github.com/cbmanu/weather-website" target="_blank">
-                            <span class="text-white">Code in Github</span>
-                        </a>
-                    </button>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-md text-center">
+          <h3>Task Manager</h3>
+          <p>To Keep You Organized!</p>
+          <div class="img-projects">
+            <a href="https://task-manager-joqq.onrender.com/" target="_blank">
+              <img
+                src="img/taskManager.png"
+                alt="img first project countdown"
+              />
+            </a>
+          </div>
+          <button class="btn btn-primary m-4">
+            <a href="https://github.com/cbmanu/task-manager" target="_blank">
+              <span class="text-white">Code in Github</span>
+            </a>
+          </button>
         </div>
-
-        <!-- footer -->
-        <%- include('partials/footer.ejs')%>
-</body>
-
+        <div class="col-md text-center">
+          <h3>Chat online</h3>
+          <p>Interact with any person in the world!</p>
+          <div class="img-projects">
+            <a href="https://chat-online-inhg.onrender.com/" target="_blank">
+              <img src="img/chat.png" alt="img second project restaurant" />
+            </a>
+          </div>
+          <button class="btn btn-primary m-4">
+            <a href="https://github.com/cbmanu/chat" target="_blank">
+              <span class="text-white">Code in Github</span>
+            </a>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <h3>Get the weather</h3>
+          <p>Any city at any time!</p>
+          <div class="img-projects">
+            <a href="https://gettheweather.onrender.com/" target="_blank">
+              <img src="img/weather.png" alt="img first project countdown" />
+            </a>
+          </div>
+          <button class="btn btn-primary m-4">
+            <a href="https://github.com/cbmanu/weather-website" target="_blank">
+              <span class="text-white">Code in Github</span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <%- include('partials/footer.ejs')%>
+  </body>
 </html>
