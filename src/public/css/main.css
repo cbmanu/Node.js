@@ -165,13 +165,22 @@ body {
 }
 
 /* form */
-.form-group .btn {
-  width: 100%;
+.btn-primary {
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary);
+  color: var(--text);
 }
-
+.btn-primary:hover {
+  background-color: var(--accent) !important;
+  border-color: var(--secondary);
+  color: var(--text);
+}
+.btn-primary > a {
+  text-decoration: none;
+}
 /* Skills Page */
 
-.skills-title {
+.title {
   text-align: center;
   font-size: 3em;
   margin-top: 80px;
@@ -198,10 +207,6 @@ body {
 }
 /* Projects Page */
 
-.project-title {
-  font-size: 3em;
-  margin-top: 35px;
-}
 .img-projects {
   width: 85%;
   height: auto;
@@ -222,7 +227,11 @@ body {
 
 /* contact */
 .contact-form {
-  min-height: 1vh;
+  min-height: 80vh;
+  width: 50%;
+}
+.contact-form > form > .btn-primary {
+  width: 100%;
 }
 .col2 {
   text-align: end;
@@ -242,13 +251,13 @@ body {
 /* footer */
 
 .footer-container {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -301,7 +310,7 @@ footer p {
     margin-bottom: 200px;
   }
 
-  .skills-title {
+  .title {
     font-size: 3.4em;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -312,7 +321,7 @@ footer p {
 
   /* Project */
 
-  .project-title {
+  .title {
     font-size: 3.4em;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -333,8 +342,13 @@ footer p {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   /* contact page */
 
-  .card {
-    width: 330px;
+  .contact-form {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .contact-form {
+    width: 70%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -346,16 +360,6 @@ footer p {
 
   .main-title {
     font-size: 2em;
-  }
-  .big-skull {
-    width: 300px;
-    height: 370px;
-  }
-  .mini-skull1,
-  .mini-skull2,
-  .mini-skull3,
-  .mini-skull4 {
-    display: none;
   }
   .links-contact div {
     text-align: center;
@@ -369,6 +373,10 @@ footer p {
   }
   .link-contact:hover {
     font-size: 1.25em;
+  }
+
+  .contact-form {
+    width: 70%;
   }
 }
 
