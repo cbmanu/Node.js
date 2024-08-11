@@ -106,7 +106,7 @@ body {
   text-align: center;
 }
 
-.mini-skull-logo {
+.logo {
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
@@ -236,16 +236,22 @@ body {
 .col2 {
   text-align: end;
 }
+a,
 .link-contact {
   list-style: none;
-  color: #fff;
+  color: var(--text);
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1em;
+  font-weight: lighter;
+  line-height: normal;
   transition: all 1s ease;
 }
 .link-contact:hover {
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1.4em;
+  font-size: 1.1em;
+}
+.link-col {
+  justify-content: end;
 }
 
 /* footer */
@@ -275,7 +281,7 @@ footer p {
   /* main content */
 
   .hero {
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-bottom: 100px;
   }
   .logo {
@@ -345,10 +351,16 @@ footer p {
   .contact-form {
     width: 70%;
   }
+  .link-contact {
+    font-size: 0.7em;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .contact-form {
     width: 70%;
+  }
+  .link-col {
+    justify-content: start;
   }
 }
 @media screen and (max-width: 576px) {
@@ -358,18 +370,20 @@ footer p {
     font-size: calc(1rem + 0.6vw);
   }
 
+  #about-me h2 {
+    font-size: 1.5em;
+  }
+
   .main-title {
     font-size: 2em;
   }
-  .links-contact div {
-    text-align: center;
-  }
+
   #about-me {
     background-color: transparent;
     border: 0px;
   }
   .link-contact {
-    font-size: 1.2em;
+    font-size: 0.8em;
   }
   .link-contact:hover {
     font-size: 1.25em;

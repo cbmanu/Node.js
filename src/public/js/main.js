@@ -1,17 +1,3 @@
-// let navbar = document.querySelector(".navbar");
-// var banner_height = $("#navscroll").height();
-// var lastScrollTop = 0;
-// window.scroll(function () {
-//   var scroll = $(window).scrollTop();
-//   var currScrollTop = $(this).scrollTop();
-//   if (scroll >= banner_height && currScrollTop > lastScrollTop) {
-//     navbar.style.backgroundColor = "";
-//   } else {
-//     navbar.style.backgroundColor = "blue";
-//   }
-//   lastScrollTop = currScrollTop;
-// });
-
 let text = document.querySelector(".main-title");
 let strText = text.textContent;
 let splitText = strText.split("");

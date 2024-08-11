@@ -11,28 +11,61 @@
     <div class="container mb-5">
       <div class="contact-form m-auto">
         <h2 class="title">Contact me</h2>
-        <form>
+        <form action="/send_email" method="POST">
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
+            <label for="email">Email address</label>
             <input
               type="email"
+              name="from"
               class="form-control"
-              id="exampleInputEmail1"
+              id="from"
               aria-describedby="emailHelp"
               placeholder="Enter email"
             />
           </div>
-          <div>
-            <label for="exampleFormControlTextarea1">Message</label>
-            <textarea
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
               class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="20"
-              placeholder="Hey I would like to hire you!!!"
-            ></textarea>
+              name="subject"
+              id="subject"
+              aria-describedby="emailSubject"
+              placeholder="Enter Subject"
+            />
           </div>
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="20"
+            placeholder="Hey I would like to hire you!!!"
+          ></textarea>
+
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        <div class="row">
+          <div class="col-md">
+            <div>
+              <i class="fa-brands fa-github"></i>
+              <a href="https://github.com/cbmanu"><h6 class="d-inline link-contact">My Github</h6></a>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <h6 class="d-inline link-contact">+58-4126526040</h6>
+            </div>
+          </div>
+          <div class="col-md d-flex link-col">
+            <div class="d-block">
+              <i class="fa-solid fa-envelope p-1"></i>
+            <h6  class="d-inline link-contact">carrero.besson@gmail.com</h6>
+            </div>
+          </div>
+  
+          </div>
+      </div>
+
       </div>
     </div>
     <%- include('partials/footer.ejs')%>
